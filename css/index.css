@@ -62,8 +62,9 @@ column direction. */
   background-size: cover;
   margin: 2rem 1.5rem;
   margin: 32px 24px;
-  height: 35rem;
-  width: 60%;
+  height: 25rem;
+  width: 34.5625rem;
+  width: 553px;
 }
 
 .lb_text {
@@ -98,4 +99,94 @@ column direction. */
   width: 17.875rem;
   width: 286px;
   height: 3rem;
+}
+
+/* Main Informaiton section */
+
+.main_containter {
+  display: flex;
+  width: 100;
+  border: 2px solid blue;
+}
+
+.main_left {
+  width: 37.5625rem;
+  width: 601px;
+}
+
+.main_left_img {
+  background-image: url("../resources/images/information-main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 2rem 1.5rem;
+  margin: 32px 24px;
+  height: 18.75rem;
+  width: 34.5625rem;
+  width: 553px;
+}
+
+.main_left_text {
+  margin-left: 1.5rem;
+  margin-left: 24px;
+}
+
+.main_left_text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.main_right {
+  display: flex;
+  flex-direction: column;
+  width: 26.4375rem;
+  width: 423px;
+}
+
+.main_right img {
+  height: 35%;
+  width: 35%;
+  margin: 1rem;
+  margin: 16px;
+}
+
+.main_right .right_top {
+  display: inline-flex;
+}
+
+/* Add one more rem of top margin to aling wiht left image */
+.main_right .right_top:first-child {
+  margin-top: 1rem;
+  margin-top: 16px;
+}
+
+.main_right .right_top_text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.main_right .right_middle {
+  display: inline-flex;
+}
+
+.main_right .right_middle_text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.main_right .right_bottom {
+  display: inline-flex;
+}
+
+.main_right .right_bottom_text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  margin-left: 2rem;
 }
