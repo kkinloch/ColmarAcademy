@@ -149,6 +149,9 @@ column direction. */
   margin: 16px;
 }
 
+/* Make right sections inline flex and their text sections a sub-flex w/ direction
+of column */
+
 .main_right .right_top {
   display: inline-flex;
 }
@@ -189,4 +192,40 @@ column direction. */
   align-items: left;
   justify-content: center;
   margin-left: 2rem;
+}
+
+.learning {
+  border: 2px solid red;
+}
+.learning .l_title {
+  text-align: center;
+  margin-top: 2rem;
+  margin-top: 32px;
+  margin-bottom: 2rem;
+  margin-bottom: 32px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.learn_row1 {
+  display: flex;
+}
+
+.learn_row1 img {
+  height: 110px;
+  width: 220px;
+}
+
+.learn_row1 .r1c1 {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.learn_row2 {
+  display: flex;
+}
+.learn_row2 img {
+  height: 110px;
+  width: 220px;
 }
