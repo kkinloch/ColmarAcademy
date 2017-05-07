@@ -1,30 +1,30 @@
+/* Global Settings */
 html {
   font-size: 16px;
 }
 
 body {
-  width: 1280px;
+  /*Make the body constrain to 1024px, shoudl be enough to layout well*/
+  width: 1024px;
 }
 
+/* header section - has main container that we make flex. */
 .hcontain {
   display: flex;
   align-items: center;
   height: 64px;
   height: 4rem;
   width: 100%;
-  border: 5px solid red;
 }
 
 .himg {
   margin-left: 1.5rem;
   margin-left: 24px;
-  border: 1px solid blue;
 }
 
 .htext {
   margin-left: 1rem;
   text-transform: uppercase;
-  border: 2px solid red;
 }
 
 .htext .uname {
@@ -35,13 +35,67 @@ body {
   color: gray;
 }
 
+/* Position relative and push to the right of the page */
 .hmenu {
   position: relative;
-  left: 45rem;
-  border: 2px solid green;
+  left: 28rem;
 }
-
+/* Make inline block, we may want to target each block for style later. */
 .hmenu ul li {
   display: inline-block;
-  border: 3px solid black;
+  margin-right: 1rem;
+}
+
+/* Learning Banner Section - has main container and containers for each element.
+Make the container flex, but also make the text elements their own flex w/
+column direction. */
+
+.learn_banner {
+  display: flex;
+  width: 100;
+  background-color: lightgray;
+}
+
+.lb_img {
+  background-image: url("../resources/images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 2rem 1.5rem;
+  margin: 32px 24px;
+  height: 35rem;
+  width: 60%;
+}
+
+.lb_text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  margin-left: 2.5rem;
+  margin-left: 40px;
+}
+
+.lb_text h1 {
+  width: 17.875rem;
+  width: 286px;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.lb_text .lb_p {
+  width: 17.875rem;
+  width: 286px;
+  font-size: 1.5rem;
+}
+
+/* Make flex in order to center text easily */
+.lb_text .lb_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  color: white;
+  width: 17.875rem;
+  width: 286px;
+  height: 3rem;
 }
