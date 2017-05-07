@@ -1,0 +1,47 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 1280px;
+}
+
+.hcontain {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  height: 4rem;
+  width: 100%;
+  border: 5px solid red;
+}
+
+.himg {
+  margin-left: 1.5rem;
+  margin-left: 24px;
+  border: 1px solid blue;
+}
+
+.htext {
+  margin-left: 1rem;
+  text-transform: uppercase;
+  border: 2px solid red;
+}
+
+.htext .uname {
+  font-style: bold;
+}
+
+.htext .type {
+  color: gray;
+}
+
+.hmenu {
+  position: relative;
+  left: 45rem;
+  border: 2px solid green;
+}
+
+.hmenu ul li {
+  display: inline-block;
+  border: 3px solid black;
+}
