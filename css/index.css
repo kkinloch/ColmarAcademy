@@ -105,7 +105,7 @@ column direction. */
 
 .main_containter {
   display: flex;
-  width: 100;
+  width: 100%;
   border: 2px solid blue;
 }
 
@@ -227,4 +227,81 @@ of column */
 .learn_row2 img {
   height: 110px;
   width: 220px;
+}
+
+.thesis {
+border: 2px solid blue;
+}
+
+.thesis h1 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.thesis_inner {
+  display: flex;
+}
+
+.thesis_left_img video {
+  height: 25rem;
+  width: 34.5625rem;
+  width: 553px;
+  margin: 1rem 1.5rem;
+  margin: 16px 24px;
+
+}
+
+.thesis_left {
+  display: flex;
+  flex-direction: column;
+  width: 37.5625rem;
+  width: 601px;
+  border: 2px solid green;
+}
+
+.thesis_left_text {
+
+}
+
+.thesis_right {
+  display: flex;
+  flex-direction: column;
+  width: 26.4375rem;
+  width: 423px;
+}
+
+.thesis_right img {
+  height: 75%;
+  width: 35%;
+  margin: 1rem;
+  margin: 16px;
+}
+
+.thesis_right_r1 {
+  display: inline-flex;
+  height: 168px;
+  border: 1px solid black;
+}
+
+.thesis_right_r1text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.thesis_right_r2 {
+  display: inline-flex;
+  height: 168px;
+
+}
+
+.thesis_right_r2text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  margin-left: 2rem;
 }
