@@ -305,3 +305,26 @@ border: 2px solid blue;
   justify-content: center;
   margin-left: 2rem;
 }
+
+/* footer section - has main container that we make flex. */
+.fcontain {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  height: 4rem;
+  width: 100%;
+}
+
+.ftext {
+  margin-left: 1.5rem;
+}
+/* Position relative and push to the right of the page */
+.fmenu {
+  position: relative;
+  left: 28rem;
+}
+/* Make inline block, we may want to target each block for style later. */
+.fmenu ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
