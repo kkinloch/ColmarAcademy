@@ -16,6 +16,7 @@ body {
   height: 64px;
   height: 4rem;
   width: 100%;
+  background-color: #E9EAEA;
 }
 
 .himg {
@@ -26,27 +27,36 @@ body {
 .htext {
   margin-left: 1rem;
   text-transform: uppercase;
+  font-size: 1.5rem;
 }
 
 .htext .uname {
-  font-style: bold;
+  font-weight: 500;
+  /*color: #553900;*/
 }
 
 .htext .type {
-  color: gray;
+  color: #34B3A0;
 }
 
 /* Position relative and push to the right of the page */
 .hmenu {
   position: relative;
-  left: 28rem;
+  left: 22rem;
 }
 /* Make inline block, we may want to target each block for style later. */
 .hmenu ul li {
   display: inline-block;
   margin-right: 1rem;
+  height: 1.25rem;
+  font-size: 1.25rem;
 }
-
+.hmenu ul li:last-child {
+  color: #34B3A0;
+}
+.hmenu ul li:hover {
+  color: #34B3A0;
+}
 /* Learning Banner Section - has main container and containers for each element.
 Make the container flex, but also make the text elements their own flex w/
 column direction. */
@@ -54,7 +64,6 @@ column direction. */
 .learn_banner {
   display: flex;
   width: 100;
-  background-color: lightgray;
 }
 
 .lb_img {
@@ -99,7 +108,7 @@ column direction. */
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: gray;
+  background-color: #ACC5F5;
   color: white;
   width: 17.875rem;
   width: 286px;
@@ -107,6 +116,16 @@ column direction. */
   font-size: 1.25rem;
 }
 
+.lb_text .lb_button:hover {
+  background-color: #ACC5F5;
+  color: white;
+}
+.lb_text .lb_button:active {
+  background-color: #553900;
+  transition-duration: 1.5s;
+  transition-timing-function: ease-in-out;
+  color: white;
+}
 /* Main Informaiton section */
 
 .main_containter {
@@ -137,13 +156,13 @@ column direction. */
 
 .main_left_text h1 {
   font-size: 2rem;
-  font-weight: 700px;
+  font-weight: 700;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
 }
 
 .main_left_text p {
-  color: gray;
+
 }
 
 .main_left_text .hiring {
@@ -169,6 +188,7 @@ of column */
 
 .main_right .right_top {
   display: inline-flex;
+  background-color: #E9EAEA;
 }
 
 /* Add one more rem of top margin to aling wiht left image */
@@ -189,6 +209,7 @@ of column */
 .main_right h2 {
   font-size: 1.25rem;
   font-weight: 700;
+
 }
 
 .main_right .right_middle {
@@ -218,7 +239,6 @@ of column */
 }
 
 .learning {
-  background-color: lightgray;
   padding-bottom: 2rem;
 }
 .learning .l_title {
@@ -258,7 +278,7 @@ of column */
 }
 
 .bgwhite {
-  background-color: white;
+  background-color: #E9EAEA;
   height: 130px;
   margin-bottom: 0.5rem;
 }
@@ -278,12 +298,14 @@ of column */
 }
 
 .thesis {
-margin-top: 2rem;
+  /*margin-top: 2rem;*/
+
 }
 
 .thesis h1 {
   text-align: center;
-  margin-top: 1rem;
+  /*margin-top: 1rem;*/
+  padding-top: 1rem;
   margin-bottom: 1rem;
   font-size: 2rem;
   font-size: 32px;
@@ -327,7 +349,6 @@ margin-top: 2rem;
 .thesis_left_text {
   display: flex;
   flex-wrap: wrap;
-  color: gray;
 }
 
 .thesis_right {
@@ -348,7 +369,7 @@ margin-top: 2rem;
 .thesis_right_r1 {
   display: inline-flex;
   height: 168px;
-  background-color: lightgray;
+  background-color: #E9EAEA;
 }
 
 .thesis_right_r1text {
@@ -377,7 +398,7 @@ margin-top: 2rem;
   height: 64px;
   height: 4rem;
   width: 100%;
-  color: gray;
+  background-color: #E9EAEA;
 }
 
 .ftext {
