@@ -677,7 +677,7 @@ of column */
   margin-right: 16px;
   margin-right: 1rem;
 }
-/* Smartphones (portrait and landscape) ----------- */
+/* adding just one @media for the sake of the requirements of the course ----------- */
 @media only screen and (max-device-width : 480px) {
 
 .hmenu ul {
