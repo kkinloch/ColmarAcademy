@@ -1,6 +1,7 @@
 /* Global Settings */
 html {
   font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 body {
@@ -79,14 +80,18 @@ column direction. */
 .lb_text h1 {
   width: 17.875rem;
   width: 286px;
-  font-weight: 500;
-  font-size: 2.5rem;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .lb_text .lb_p {
   width: 17.875rem;
   width: 286px;
   font-size: 1.5rem;
+  line-height: 1.75rem;
+  margin-bottom: 2rem;
 }
 
 /* Make flex in order to center text easily */
@@ -99,6 +104,7 @@ column direction. */
   width: 17.875rem;
   width: 286px;
   height: 3rem;
+  font-size: 1.25rem;
 }
 
 /* Main Informaiton section */
@@ -106,7 +112,6 @@ column direction. */
 .main_containter {
   display: flex;
   width: 100%;
-  border: 2px solid blue;
 }
 
 .main_left {
@@ -132,7 +137,17 @@ column direction. */
 
 .main_left_text h1 {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 700px;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.main_left_text p {
+  color: gray;
+}
+
+.main_left_text .hiring {
+  margin-top: 2rem;
 }
 
 .main_right {
@@ -167,7 +182,13 @@ of column */
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  margin-left: 2rem;
+  margin-left: 0.5rem;
+  line-height: 2rem;
+}
+
+.main_right h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .main_right .right_middle {
@@ -179,7 +200,8 @@ of column */
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  margin-left: 2rem;
+  margin-left: 0.5rem;
+  line-height: 2rem;
 }
 
 .main_right .right_bottom {
@@ -191,51 +213,95 @@ of column */
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  margin-left: 2rem;
+  margin-left: 0.5rem;
+  line-height: 2rem;
 }
 
 .learning {
-  border: 2px solid red;
+  background-color: lightgray;
+  padding-bottom: 2rem;
 }
 .learning .l_title {
   text-align: center;
-  margin-top: 2rem;
-  margin-top: 32px;
+  padding-top: 2rem;
   margin-bottom: 2rem;
   margin-bottom: 32px;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
+}
+
+.learning h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.learning h2 {
+  color: gray;
+  margin-top: 0.5rem;
+  margin-bottom: .5rem;
+}
+
+.learning p {
+  color: gray;
+  line-height: 1.5rem;
 }
 
 .learn_row1 {
   display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.5rem;
 }
 
 .learn_row1 img {
-  height: 110px;
-  width: 220px;
+  height: 120px;;
+  width: 240px;
 }
 
-.learn_row1 .r1c1 {
-  display: flex;
-  flex-direction: column;
+.bgwhite {
+  background-color: white;
+  height: 130px;
+  margin-bottom: 0.5rem;
+}
+
+.ltext {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 
 .learn_row2 {
   display: flex;
+  justify-content: space-around;
 }
 .learn_row2 img {
-  height: 110px;
-  width: 220px;
+  height: 120px;;
+  width: 240px;
 }
 
 .thesis {
-border: 2px solid blue;
+margin-top: 2rem;
 }
 
 .thesis h1 {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.thesis h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.thesis_left_text {
+  margin-left: 1.5rem;
+}
+
+.thesis_left_text p {
   margin-bottom: 2rem;
 }
 
@@ -247,8 +313,7 @@ border: 2px solid blue;
   height: 25rem;
   width: 34.5625rem;
   width: 553px;
-  margin: 1rem 1.5rem;
-  margin: 16px 24px;
+  margin-left: 1.5rem;
 
 }
 
@@ -257,11 +322,12 @@ border: 2px solid blue;
   flex-direction: column;
   width: 37.5625rem;
   width: 601px;
-  border: 2px solid green;
 }
 
 .thesis_left_text {
-
+  display: flex;
+  flex-wrap: wrap;
+  color: gray;
 }
 
 .thesis_right {
@@ -269,6 +335,7 @@ border: 2px solid blue;
   flex-direction: column;
   width: 26.4375rem;
   width: 423px;
+  margin-top: 2.5rem;
 }
 
 .thesis_right img {
@@ -281,29 +348,26 @@ border: 2px solid blue;
 .thesis_right_r1 {
   display: inline-flex;
   height: 168px;
-  border: 1px solid black;
+  background-color: lightgray;
 }
 
 .thesis_right_r1text {
   display: flex;
   flex-direction: column;
-  align-items: left;
   justify-content: center;
-  margin-left: 2rem;
+  margin-left: 0.5rem;
 }
 
 .thesis_right_r2 {
   display: inline-flex;
   height: 168px;
-
 }
 
 .thesis_right_r2text {
   display: flex;
   flex-direction: column;
-  align-items: left;
   justify-content: center;
-  margin-left: 2rem;
+  margin-left: 0.5rem;
 }
 
 /* footer section - has main container that we make flex. */
@@ -313,6 +377,7 @@ border: 2px solid blue;
   height: 64px;
   height: 4rem;
   width: 100%;
+  color: gray;
 }
 
 .ftext {
@@ -321,7 +386,7 @@ border: 2px solid blue;
 /* Position relative and push to the right of the page */
 .fmenu {
   position: relative;
-  left: 28rem;
+  left: 30rem;
 }
 /* Make inline block, we may want to target each block for style later. */
 .fmenu ul li {

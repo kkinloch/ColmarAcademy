@@ -5,6 +5,7 @@
     <title>ColmarAcademy</title>
     <link href="./css/reset.css" type="text/css" rel="stylesheet">
     <link href="./css/index.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
   </head>
   <body>
     <!-- Make a container for the header elements & put each element in their own
@@ -47,7 +48,7 @@
         <div class="main_left_text">
           <h1>It doesn't hurt to keep practing</h1>
           <p>Curabitur ultrices dictum mauris, nec pharetra enim imperdiet non. Nunc tempus venenatis purus, at faucibus mi tincidunt id. Curabitur ultrices dictum mauris, nec pharetra enim imperdiet non. Nunc tempus venenatis purus.</p>
-          <p>Emanuel, Sr Strategist at Hiring.com</p>
+          <p class="hiring">Emanuel, Sr Strategist at Hiring.com</p>
         </div>
       </div>
       <div class="main_right">
@@ -82,58 +83,65 @@
     In fact, the sub-sections will need to be columns.-->
     <div class="learning">
       <h1 class="l_title">Start learning</h1>
-      <div class="learn_row1">
-        <div class="r1c1_img">
-          <img src="./resources/images/course-software.jpg" alt="image not supported" />
-          <div class="r1c1_text">
-            <h1>Software engineering</h1>
-            <h2>Courses</h2>
-            <p>Web Development, Mobile Developement, iOT, APIs</p>
+        <div class="learn_row1">
+          <div class="r1c1_img">
+            <img src="./resources/images/course-software.jpg" alt="image not supported" />
+              <div class="r1c1_text bgwhite">
+                <h1 class="ltext">Software engineering</h1>
+                <h2 class="ltext">Courses</h2>
+                <p class="ltext">Web Development, Mobile</p>
+                <p class="ltext">Developement, iOT, APIs</p>
+              </div>
+          </div>
+          <div class="r1c2_img">
+            <img src="./resources/images/course-computer-art.jpg" alt="image not supported" />
+              <div class="r1c2_text bgwhite">
+                <h1 class="ltext">Computer art</h1>
+                <h2 class="ltext">Courses</h2>
+                <p class="ltext">Imaging & Design, Web Design,<p>
+                <p class="ltext">Motion graphics & Visual Effects,</p>
+                <p class="ltext">Computer Animation</p>
+              </div>
+          </div>
+          <div class="r1c3_img">
+            <img src="./resources/images/course-design.jpg" alt="image not supported" />
+              <div class="r1c3_text bgwhite">
+                <h1 class="ltext">Design</h1>
+                <h2 class="ltext">Courses</h2>
+                <p class="ltext">User Experience Design, User</p>
+                <p class="ltext">Research, Visual Design</p>
+              </div>
           </div>
         </div>
-        <div class="r1c2_img">
-          <img src="./resources/images/course-computer-art.jpg" alt="image not supported" />
-          <div class="r1c2_text">
-            <h1>Software engineering</h1>
-            <h2>Courses</h2>
-            <p>Web Development, Mobile Developement, iOT, APIs</p>
+        <div class="learn_row2">
+          <div class="r2c1_img">
+            <img src="./resources/images/course-data.jpg" alt="image not supported" />
+              <div class="r2c1_text bgwhite">
+                <h1 class="ltext">Data</h1>
+                <h2 class="ltext">Courses</h2>
+                <p class="ltext">Data Science, Big Data, SQL, Data</p>
+                <p class="ltext">Visulization</p>
+              </div>
+          </div>
+          <div class="r2c2_img">
+            <img src="./resources/images/course-business.jpg" alt="image not supported" />
+              <div class="r2c2_text bgwhite">
+                <h1 class="ltext">Business</h1>
+                <h2 class="ltext">Courses</h2>
+                <p class="ltext">Product Development, Business</p>
+                <p class="ltext">Development, Startup</p>
+              </div>
+          </div>
+          <div class="r2c3_img">
+            <img src="./resources/images/course-marketing.jpg" alt="image not supported" />
+              <div class="r2c3_text bgwhite">
+                <h1 class="ltext">Marketing</h1>
+                <h2 class="ltext">Courses</h2>
+                <p class="ltext">Analytics, Conten Marketing,</p>
+                <p class="ltext">Mobile Marketing</p>
+              </div>
           </div>
         </div>
-        <div class="r1c3_img">
-          <img src="./resources/images/course-design.jpg" alt="image not supported" />
-          <div class="r1c3_text">
-            <h1>Software engineering</h1>
-            <h2>Courses</h2>
-            <p>Web Development, Mobile Developement, iOT, APIs</p>
-          </div>
-        </div>
-      </div>
-      <div class="learn_row2">
-        <div class="r2c1">
-          <img src="./resources/images/course-data.jpg" alt="image not supported" />
-          <div class="r2c1_text">
-            <h1>Software engineering</h1>
-            <h2>Courses</h2>
-            <p>Web Development, Mobile Developement, iOT, APIs</p>
-          </div>
-        </div>
-        <div class="r2c2">
-          <img src="./resources/images/course-business.jpg" alt="image not supported" />
-          <div class="r2c2_text">
-            <h1>Software engineering</h1>
-            <h2>Courses</h2>
-            <p>Web Development, Mobile Developement, iOT, APIs</p>
-          </div>
-        </div>
-        <div class="r2c3">
-          <img src="./resources/images/course-marketing.jpg" alt="image not supported" />
-          <div class="r2c3_text">
-            <h1>Software engineering</h1>
-            <h2>Courses</h2>
-            <p>Web Development, Mobile Developement, iOT, APIs</p>
-          </div>
-        </div>
-      </div>
     </div>
     <!-- Make a container for the Thesis Exibit section. It will be a two column sections
     so again we'll make it flex. -->
@@ -143,10 +151,10 @@
         <div class="thesis_left">
           <div class="thesis_left_img">
             <!-- <video src="./resources/videos/thesis.mp4" controls="" /> -->
-            <video src="./resources/videos/thesis.mp4" />
+            <video src="./resources/videos/thesis.mp4" controls="" />
           </div>
           <div class="thesis_left_text">
-            <h1>Reimagine urban</h1>
+            <h2>Reimagine urban</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
           </div>
         </div>
@@ -156,14 +164,14 @@
           <div class="thesis_right_r1">
             <img src="./resources/images/thesis-fisma.jpg" alt="image not supported" />
               <div class="thesis_right_r1text">
-                <h1>Fisma :Design and</h1>
+                <h2>Fisma: Design and</h2>
                 <p>Designer showcase of new prototype product</p>
               </div>
-            </div>
+          </div>
           <div class="thesis_right_r2">
             <img src="./resources/images/thesis-now-and-then.jpg" alt="image not supported" />
               <div class="thesis_right_r2text">
-                <h1>Now and then</h1>
+                <h2>Now and then</h2>
                 <p>Research study about New York</p>
               </div>
           </div>
