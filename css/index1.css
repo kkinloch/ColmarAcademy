@@ -678,7 +678,11 @@ of column */
   margin-right: 1rem;
 }
 /* adding just one @media for the sake of the requirements of the course ----------- */
-@media only screen and (max-device-width : 480px) {
+@media only screen and (max-width : 480px) {
+
+  .hcontain {
+    width: 75%;
+  }
 
 .hmenu ul {
   display: none;
@@ -838,5 +842,8 @@ of column */
 }
 .fmenu {
   display: none;
+}
+.fcontain {
+  width: 75%;
 }
 }
