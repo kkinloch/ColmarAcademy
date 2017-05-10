@@ -701,7 +701,7 @@ If I were publishing this for real use, we'd likely want additions @media select
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 75%;
+    width: 70%;
     }
 
   .hcontain .himg a {
