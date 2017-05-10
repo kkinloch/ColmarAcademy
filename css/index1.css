@@ -1,849 +1,855 @@
-/* Global Settings */
-html {
-  font-size: 16px;
-  font-family: "Source Sans Pro", sans-serif;
-}
+  /* Global Settings */
+  html {
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    }
 
-body {
-  /*Make the body constrain to 1024px, shoudl be enough to layout well*/
-  width: 1024px;
-}
+  body {
+    /*Make the body constrain to 1024px, shoudl be enough to layout well*/
+    width: 1024px;
+    }
 
-/* header section - has main container that we make flex. */
-.hcontain {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 64px;
-  height: 64px;
-  height: 64px;
-  height: 4rem;
-  width: 100%;
-  background-color: #E9EAEA;
-}
+  /* header section - has main container that we make flex. */
+  .hcontain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 64px;
+    height: 64px;
+    height: 64px;
+    height: 4rem;
+    width: 100%;
+    background-color: #E9EAEA;
+    }
 
-.hcontain .himg a {
-  display: none;
-}
+  .hcontain .himg a {
+    display: none;
+    }
 
-.himg {
-  margin-left: 24px;
-  margin-left: 24px;
-  margin-left: 1.5rem;
-  margin-left: 24px;
-}
+  .himg {
+    margin-left: 24px;
+    margin-left: 24px;
+    margin-left: 1.5rem;
+    margin-left: 24px;
+    }
 
-.htext {
-  margin-left: 16px;
-  margin-left: 16px;
-  margin-left: 1rem;
-  text-transform: uppercase;
-  font-size: 24px;
-  font-size: 24px;
-  font-size: 1.5rem;
-}
+  .htext {
+    margin-left: 16px;
+    margin-left: 16px;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-size: 24px;
+    font-size: 1.5rem;
+    }
 
-.htext .uname {
-  font-weight: 500;
-  /*color: #553900;*/
-}
+  .htext .uname {
+    font-weight: 500;
+    /*color: #553900;*/
+    }
 
-.htext .type {
-  color: #34B3A0;
-}
+  .htext .type {
+    color: #34B3A0;
+    }
 
-/* Position relative and push to the right of the page */
-.hmenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  left: 352px;
-  left: 352px;
-  left: 22rem;
-}
-/* Make inline block, we may want to target each block for style later. */
-.hmenu ul li {
-  display: inline-block;
-  margin-right: 16px;
-  margin-right: 16px;
-  margin-right: 1rem;
-  height: 20px;
-  height: 20px;
-  height: 1.25rem;
-  font-size: 20px;
-  font-size: 20px;
-  font-size: 1.25rem;
-}
-.hmenu ul li:last-child {
-  color: #34B3A0;
-}
-.hmenu ul li:hover {
-  color: #34B3A0;
-}
-/* Learning Banner Section - has main container and containers for each element.
-Make the container flex, but also make the text elements their own flex w/
-column direction. */
+  /* Position relative and push to the right of the page */
+  .hmenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    left: 352px;
+    left: 352px;
+    left: 22rem;
+    }
 
-.learn_banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100;
-}
+  /* Make inline block, we may want to target each block for style later. */
+  .hmenu ul li {
+    display: inline-block;
+    margin-right: 16px;
+    margin-right: 16px;
+    margin-right: 1rem;
+    height: 20px;
+    height: 20px;
+    height: 1.25rem;
+    font-size: 20px;
+    font-size: 20px;
+    font-size: 1.25rem;
+    }
 
-.lb_img {
-  background-image: url("../resources/images/banner.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 32px 24px;
-  margin: 32px 24px;
-  margin: 2rem 1.5rem;
-  margin: 32px 24px;
-  height: 400px;
-  height: 400px;
-  height: 25rem;
-  width: 553px;
-  width: 553px;
-  width: 34.5625rem;
-  width: 553px;
-}
+  .hmenu ul li:last-child {
+    color: #34B3A0;
+    }
 
-.lb_text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 40px;
-  margin-left: 40px;
-  margin-left: 2.5rem;
-  margin-left: 40px;
-}
+  .hmenu ul li:hover {
+    color: #34B3A0;
+    }
 
-.lb_text h1 {
-  width: 286px;
-  width: 286px;
-  width: 17.875rem;
-  width: 286px;
-  font-weight: 700;
-  font-size: 36px;
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 40px;
-  line-height: 40px;
-  line-height: 2.5rem;
-  margin-bottom: 32px;
-  margin-bottom: 32px;
-  margin-bottom: 2rem;
-}
+  /* Learning Banner Section - has main container and containers for each element.
+  Make the container flex, but also make the text elements their own flex w/
+  column direction. */
 
-.lb_text .lb_p {
-  width: 286px;
-  width: 286px;
-  width: 17.875rem;
-  width: 286px;
-  font-size: 24px;
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 28px;
-  line-height: 28px;
-  line-height: 1.75rem;
-  margin-bottom: 32px;
-  margin-bottom: 32px;
-  margin-bottom: 2rem;
-}
+  .learn_banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100;
+    }
 
-/* Make flex in order to center text easily */
-.lb_text .lb_button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #ACC5F5;
-  color: white;
-  width: 286px;
-  width: 286px;
-  width: 17.875rem;
-  width: 286px;
-  height: 48px;
-  height: 48px;
-  height: 3rem;
-  font-size: 20px;
-  font-size: 20px;
-  font-size: 1.25rem;
-}
+  .lb_img {
+    background-image: url("../resources/images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 32px 24px;
+    margin: 32px 24px;
+    margin: 2rem 1.5rem;
+    margin: 32px 24px;
+    height: 400px;
+    height: 400px;
+    height: 25rem;
+    width: 553px;
+    width: 553px;
+    width: 34.5625rem;
+    width: 553px;
+    }
 
-.lb_text .lb_button:hover {
-  background-color: #ACC5F5;
-  color: white;
-}
-.lb_text .lb_button:active {
-  background-color: #553900;
-  -webkit-transition-duration: 1.5s;
-          transition-duration: 1.5s;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-  color: white;
-}
-/* Main Informaiton section */
+  .lb_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 40px;
+    margin-left: 40px;
+    margin-left: 2.5rem;
+    margin-left: 40px;
+    }
 
-.main_containter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
+  .lb_text h1 {
+    width: 286px;
+    width: 286px;
+    width: 17.875rem;
+    width: 286px;
+    font-weight: 700;
+    font-size: 36px;
+    font-size: 36px;
+    font-size: 2.25rem;
+    line-height: 40px;
+    line-height: 40px;
+    line-height: 2.5rem;
+    margin-bottom: 32px;
+    margin-bottom: 32px;
+    margin-bottom: 2rem;
+    }
 
-.main_left {
-  width: 601px;
-  width: 601px;
-  width: 37.5625rem;
-  width: 601px;
-}
+  .lb_text .lb_p {
+    width: 286px;
+    width: 286px;
+    width: 17.875rem;
+    width: 286px;
+    font-size: 24px;
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 28px;
+    line-height: 28px;
+    line-height: 1.75rem;
+    margin-bottom: 32px;
+    margin-bottom: 32px;
+    margin-bottom: 2rem;
+    }
 
-.main_left_img {
-  background-image: url("../resources/images/information-main.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 32px 24px;
-  margin: 32px 24px;
-  margin: 2rem 1.5rem;
-  margin: 32px 24px;
-  height: 300px;
-  height: 300px;
-  height: 18.75rem;
-  width: 553px;
-  width: 553px;
-  width: 34.5625rem;
-  width: 553px;
-}
+  /* Make flex in order to center text easily */
+  .lb_text .lb_button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #ACC5F5;
+    color: white;
+    width: 286px;
+    width: 286px;
+    width: 17.875rem;
+    width: 286px;
+    height: 48px;
+    height: 48px;
+    height: 3rem;
+    font-size: 20px;
+    font-size: 20px;
+    font-size: 1.25rem;
+    }
 
-.main_left_text {
-  margin-left: 24px;
-  margin-left: 24px;
-  margin-left: 1.5rem;
-  margin-left: 24px;
-}
+  .lb_text .lb_button:hover {
+    background-color: #ACC5F5;
+    color: white;
+    }
 
-.main_left_text h1 {
-  font-size: 32px;
-  font-size: 32px;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-top: 32px;
-  margin-top: 32px;
-  margin-top: 2rem;
-  margin-bottom: 24px;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
-}
+  .lb_text .lb_button:active {
+    background-color: #553900;
+    -webkit-transition-duration: 1.5s;
+            transition-duration: 1.5s;
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+    color: white;
+    }
 
-.main_left_text p {
+  /* Main Informaiton section */
+  .main_containter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    }
 
-}
+  .main_left {
+    width: 601px;
+    width: 601px;
+    width: 37.5625rem;
+    width: 601px;
+    }
 
-.main_left_text .hiring {
-  margin-top: 32px;
-  margin-top: 32px;
-  margin-top: 2rem;
-}
+  .main_left_img {
+    background-image: url("../resources/images/information-main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 32px 24px;
+    margin: 32px 24px;
+    margin: 2rem 1.5rem;
+    margin: 32px 24px;
+    height: 300px;
+    height: 300px;
+    height: 18.75rem;
+    width: 553px;
+    width: 553px;
+    width: 34.5625rem;
+    width: 553px;
+    }
 
-.main_right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 423px;
-  width: 423px;
-  width: 26.4375rem;
-  width: 423px;
-}
+  .main_left_text {
+    margin-left: 24px;
+    margin-left: 24px;
+    margin-left: 1.5rem;
+    margin-left: 24px;
+    }
 
-.main_right img {
-  height: 35%;
-  width: 35%;
-  margin: 16px;
-  margin: 16px;
-  margin: 1rem;
-  margin: 16px;
-}
+  .main_left_text h1 {
+    font-size: 32px;
+    font-size: 32px;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 32px;
+    margin-top: 32px;
+    margin-top: 2rem;
+    margin-bottom: 24px;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    }
 
-/* Make right sections inline flex and their text sections a sub-flex w/ direction
-of column */
+  .main_left_text .hiring {
+    margin-top: 32px;
+    margin-top: 32px;
+    margin-top: 2rem;
+    }
 
-.main_right .right_top {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  background-color: #E9EAEA;
-}
+  .main_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 423px;
+    width: 423px;
+    width: 26.4375rem;
+    width: 423px;
+    }
 
-/* Add one more rem of top margin to aling wiht left image */
-.main_right .right_top:first-child {
-  margin-top: 16px;
-  margin-top: 16px;
-  margin-top: 1rem;
-  margin-top: 16px;
-}
+  .main_right img {
+    height: 35%;
+    width: 35%;
+    margin: 16px;
+    margin: 16px;
+    margin: 1rem;
+    margin: 16px;
+    }
 
-.main_right .right_top_text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 8px;
-  margin-left: 8px;
-  margin-left: 0.5rem;
-  line-height: 32px;
-  line-height: 32px;
-  line-height: 2rem;
-}
+  /* Make right sections inline flex and their text sections a sub-flex w/ direction
+  of column */
 
-.main_right h2 {
-  font-size: 20px;
-  font-size: 20px;
-  font-size: 1.25rem;
-  font-weight: 700;
+  .main_right .right_top {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    background-color: #E9EAEA;
+    }
 
-}
+  /* Add one more rem of top margin to aling wiht left image */
+  .main_right .right_top:first-child {
+    margin-top: 16px;
+    margin-top: 16px;
+    margin-top: 1rem;
+    margin-top: 16px;
+    }
 
-.main_right .right_middle {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
+  .main_right .right_top_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 8px;
+    margin-left: 8px;
+    margin-left: 0.5rem;
+    line-height: 32px;
+    line-height: 32px;
+    line-height: 2rem;
+    }
 
-.main_right .right_middle_text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 8px;
-  margin-left: 8px;
-  margin-left: 0.5rem;
-  line-height: 32px;
-  line-height: 32px;
-  line-height: 2rem;
-}
+  .main_right h2 {
+    font-size: 20px;
+    font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    }
 
-.main_right .right_bottom {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
+  .main_right .right_middle {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    }
 
-.main_right .right_bottom_text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 8px;
-  margin-left: 8px;
-  margin-left: 0.5rem;
-  line-height: 32px;
-  line-height: 32px;
-  line-height: 2rem;
-}
+  .main_right .right_middle_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 8px;
+    margin-left: 8px;
+    margin-left: 0.5rem;
+    line-height: 32px;
+    line-height: 32px;
+    line-height: 2rem;
+    }
 
-.learning {
-  padding-bottom: 32px;
-  padding-bottom: 32px;
-  padding-bottom: 2rem;
-}
-.learning .l_title {
-  text-align: center;
-  padding-top: 32px;
-  padding-top: 32px;
-  padding-top: 2rem;
-  margin-bottom: 32px;
-  margin-bottom: 32px;
-  margin-bottom: 2rem;
-  margin-bottom: 32px;
-  font-size: 32px;
-  font-size: 32px;
-  font-size: 2rem;
-  font-weight: 700;
-}
+  .main_right .right_bottom {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    }
 
-.learning h1 {
-  font-size: 20px;
-  font-size: 20px;
-  font-size: 1.25rem;
-  font-weight: 700;
-}
+  .main_right .right_bottom_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 8px;
+    margin-left: 8px;
+    margin-left: 0.5rem;
+    line-height: 32px;
+    line-height: 32px;
+    line-height: 2rem;
+    }
 
-.learning h2 {
-  color: gray;
-  margin-top: 8px;
-  margin-top: 8px;
-  margin-top: 0.5rem;
-  margin-bottom: 8px;
-  margin-bottom: 8px;
-  margin-bottom: .5rem;
-}
+  .learning {
+    padding-bottom: 32px;
+    padding-bottom: 32px;
+    padding-bottom: 2rem;
+    }
 
-.learning p {
-  color: gray;
-  line-height: 24px;
-  line-height: 24px;
-  line-height: 1.5rem;
-}
+  .learning .l_title {
+    text-align: center;
+    padding-top: 32px;
+    padding-top: 32px;
+    padding-top: 2rem;
+    margin-bottom: 32px;
+    margin-bottom: 32px;
+    margin-bottom: 2rem;
+    margin-bottom: 32px;
+    font-size: 32px;
+    font-size: 32px;
+    font-size: 2rem;
+    font-weight: 700;
+    }
 
-.learn_row1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-bottom: 8px;
-  margin-bottom: 8px;
-  margin-bottom: 0.5rem;
-}
+  .learning h1 {
+    font-size: 20px;
+    font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    }
 
-.learn_row1 img {
-  height: 120px;;
-  width: 240px;
-}
+  .learning h2 {
+    color: gray;
+    margin-top: 8px;
+    margin-top: 8px;
+    margin-top: 0.5rem;
+    margin-bottom: 8px;
+    margin-bottom: 8px;
+    margin-bottom: .5rem;
+    }
 
-.bgwhite {
-  background-color: #E9EAEA;
-  height: 130px;
-  margin-bottom: 8px;
-  margin-bottom: 8px;
-  margin-bottom: 0.5rem;
-}
+  .learning p {
+    color: gray;
+    line-height: 24px;
+    line-height: 24px;
+    line-height: 1.5rem;
+    }
 
-.ltext {
-  margin-left: 12px;
-  margin-left: 12px;
-  margin-left: 0.75rem;
-  margin-right: 12px;
-  margin-right: 12px;
-  margin-right: 0.75rem;
-}
+  .learn_row1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 8px;
+    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
+    }
 
-.learn_row2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-.learn_row2 img {
-  height: 120px;;
-  width: 240px;
-}
+  .learn_row1 img {
+    height: 120px;;
+    width: 240px;
+    }
 
-.thesis {
-  /*margin-top: 2rem;*/
+  .bgwhite {
+    background-color: #E9EAEA;
+    height: 130px;
+    margin-bottom: 8px;
+    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
+    }
 
-}
+  .ltext {
+    margin-left: 12px;
+    margin-left: 12px;
+    margin-left: 0.75rem;
+    margin-right: 12px;
+    margin-right: 12px;
+    margin-right: 0.75rem;
+    }
 
-.thesis h1 {
-  text-align: center;
-  /*margin-top: 1rem;*/
-  padding-top: 16px;
-  padding-top: 16px;
-  padding-top: 1rem;
-  margin-bottom: 16px;
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
-  font-size: 32px;
-  font-size: 32px;
-  font-size: 2rem;
-  font-size: 32px;
-  font-weight: 700;
-}
+  .learn_row2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
 
-.thesis h2 {
-  font-size: 24px;
-  font-size: 24px;
-  font-size: 1.5rem;
-  font-weight: 500;
-  padding-top: 20px;
-  padding-top: 20px;
-  padding-top: 1.25rem;
-  padding-bottom: 20px;
-  padding-bottom: 20px;
-  padding-bottom: 1.25rem;
-}
+  .learn_row2 img {
+    height: 120px;;
+    width: 240px;
+    }
 
-.thesis_left_text {
-  margin-left: 24px;
-  margin-left: 24px;
-  margin-left: 1.5rem;
-}
+  .thesis h1 {
+    text-align: center;
+    padding-top: 16px;
+    padding-top: 16px;
+    padding-top: 1rem;
+    margin-bottom: 16px;
+    margin-bottom: 16px;
+    margin-bottom: 1rem;
+    font-size: 32px;
+    font-size: 32px;
+    font-size: 2rem;
+    font-size: 32px;
+    font-weight: 700;
+    }
 
-.thesis_left_text p {
-  margin-bottom: 32px;
-  margin-bottom: 32px;
-  margin-bottom: 2rem;
-}
+  .thesis h2 {
+    font-size: 24px;
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-top: 20px;
+    padding-top: 1.25rem;
+    padding-bottom: 20px;
+    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
+    }
 
-.thesis_inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
+  .thesis_left_text {
+    margin-left: 24px;
+    margin-left: 24px;
+    margin-left: 1.5rem;
+    }
 
-.thesis_left_img video {
-  height: 400px;
-  height: 400px;
-  height: 25rem;
-  width: 553px;
-  width: 553px;
-  width: 34.5625rem;
-  width: 553px;
-  margin-left: 24px;
-  margin-left: 24px;
-  margin-left: 1.5rem;
+  .thesis_left_text p {
+    margin-bottom: 32px;
+    margin-bottom: 32px;
+    margin-bottom: 2rem;
+    }
 
-}
+  .thesis_inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    }
 
-.thesis_left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 601px;
-  width: 601px;
-  width: 37.5625rem;
-  width: 601px;
-}
+  .thesis_left_img video {
+    height: 400px;
+    height: 400px;
+    height: 25rem;
+    width: 553px;
+    width: 553px;
+    width: 34.5625rem;
+    width: 553px;
+    margin-left: 24px;
+    margin-left: 24px;
+    margin-left: 1.5rem;
+    }
 
-.thesis_left_text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
+  .thesis_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 601px;
+    width: 601px;
+    width: 37.5625rem;
+    width: 601px;
+    }
 
-.thesis_right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 423px;
-  width: 423px;
-  width: 26.4375rem;
-  width: 423px;
-  margin-top: 40px;
-  margin-top: 40px;
-  margin-top: 2.5rem;
-}
+  .thesis_left_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
 
-.thesis_right img {
-  height: 75%;
-  width: 35%;
-  margin: 16px;
-  margin: 16px;
-  margin: 1rem;
-  margin: 16px;
-}
+  .thesis_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 423px;
+    width: 423px;
+    width: 26.4375rem;
+    width: 423px;
+    margin-top: 40px;
+    margin-top: 40px;
+    margin-top: 2.5rem;
+    }
 
-.thesis_right_r1 {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 168px;
-  background-color: #E9EAEA;
-}
+  .thesis_right img {
+    height: 75%;
+    width: 35%;
+    margin: 16px;
+    margin: 16px;
+    margin: 1rem;
+    margin: 16px;
+    }
 
-.thesis_right_r1text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 8px;
-  margin-left: 8px;
-  margin-left: 0.5rem;
-}
+  .thesis_right_r1 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    height: 168px;
+    background-color: #E9EAEA;
+    }
 
-.thesis_right_r2 {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 168px;
-}
+  .thesis_right_r1text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 8px;
+    margin-left: 8px;
+    margin-left: 0.5rem;
+    }
 
-.thesis_right_r2text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 8px;
-  margin-left: 8px;
-  margin-left: 0.5rem;
-}
+  .thesis_right_r2 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    height: 168px;
+    }
 
-/* footer section - has main container that we make flex. */
-.fcontain {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 64px;
-  height: 64px;
-  height: 64px;
-  height: 4rem;
-  width: 100%;
-  background-color: #E9EAEA;
-}
+  .thesis_right_r2text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 8px;
+    margin-left: 8px;
+    margin-left: 0.5rem;
+    }
 
-.ftext {
-  margin-left: 24px;
-  margin-left: 24px;
-  margin-left: 1.5rem;
-}
-/* Position relative and push to the right of the page */
-.fmenu {
-  position: relative;
-  left: 480px;
-  left: 480px;
-  left: 30rem;
-}
-/* Make inline block, we may want to target each block for style later. */
-.fmenu ul li {
-  display: inline-block;
-  margin-right: 16px;
-  margin-right: 16px;
-  margin-right: 1rem;
-}
-/* adding just one @media for the sake of the requirements of the course ----------- */
+  /* footer section - has main container that we make flex. */
+  .fcontain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 64px;
+    height: 64px;
+    height: 64px;
+    height: 4rem;
+    width: 100%;
+    background-color: #E9EAEA;
+    }
+
+  .ftext {
+    margin-left: 24px;
+    margin-left: 24px;
+    margin-left: 1.5rem;
+    }
+
+  /* Position relative and push to the right of the page */
+  .fmenu {
+    position: relative;
+    left: 480px;
+    left: 480px;
+    left: 30rem;
+    }
+
+  /* Make inline block, we may want to target each block for style later. */
+  .fmenu ul li {
+    display: inline-block;
+    margin-right: 16px;
+    margin-right: 16px;
+    margin-right: 1rem;
+    }
+
+/* adding just one @media for the sake of the requirements of the course.
+If I were publishing this for real use, we'd likely want additions @media selectors */
 @media only screen and (max-width : 480px) {
 
+  body {
+    width: 480px;
+  }
+
   .hcontain {
-    width: 75%;
+    width: 100%;
   }
 
-.hmenu ul {
-  display: none;
+  .hmenu ul {
+    display: none;
   }
 
-.htext {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  }
+  .htext h1 {
+    display: none;
+    }
 
-.htext h1 {
-  display: none;
-  }
+  .hcontain .himg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    }
 
-.hcontain .himg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100%;
-  }
-.hcontain .himg a {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  border: 0.25px solid #E9EAEA;
-}
-.learn_banner {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-              -ms-grid-row-align: center;
-          align-items: center;
-}
+  .hcontain .himg a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    border: 0.25px solid #E9EAEA;
+    }
 
-.lb_img {
-  display: none;
-}
+  .learn_banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    }
 
-.main_containter {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-              -ms-grid-row-align: center;
-          align-items: center;
-  -ms-flex-negative: 2;
-      flex-shrink: 2;
-}
-.main_left {
-  display: none;
-}
+  .lb_img {
+    display: none;
+    }
 
-.mnodisplay {
-  display: none;
-}
+  .main_containter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    -ms-flex-negative: 2;
+        flex-shrink: 2;
+    }
 
-.main_right {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-              -ms-grid-row-align: center;
-          align-items: center;
-}
-.right_top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: red;
-}
+  .main_left {
+    display: none;
+    }
 
-.main_right img {
-  width: 200px;
-  height: 100px;
-}
+  .mnodisplay {
+    display: none;
+    }
 
-.right_middle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
+  .main_right {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    }
 
-.right_bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
+  .right_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: red;
+    }
 
-.main_right .right_top_text {
-  background-color: none;
-}
+  .main_right img {
+    width: 200px;
+    height: 100px;
+    }
 
-.learn_row1 {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-              -ms-grid-row-align: center;
-          align-items: center;
-}
+  .right_middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    }
 
-.learn_row1 .mh1 {
-  padding: 1rem;
-  height: 2rem;
-  width: 15rem;
-}
+  .right_bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    }
 
-.learn_row2 {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-              -ms-grid-row-align: center;
-          align-items: center;
-}
+  .main_right .right_top_text {
+    background-color: none;
+    }
 
-.learn_row2 .mh1 {
-  padding: 1rem;
-  height: 2rem;
-  width: 15rem;
-}
-.thesis_left {
-  width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-              -ms-grid-row-align: center;
-          align-items: center;
-}
+  .learn_row1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    }
 
-.thesis_left_text {
-  display: none;
-}
-.thesis_right {
-  display: none;
-}
-.fmenu {
-  display: none;
-}
-.fcontain {
-  width: 75%;
-}
+  .learn_row1 .mh1 {
+    padding: 1rem;
+    height: 2rem;
+    width: 15rem;
+    }
+
+  .learn_row2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    }
+
+  .learn_row2 .mh1 {
+    padding: 1rem;
+    height: 2rem;
+    width: 15rem;
+    }
+
+  .thesis_left {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    }
+
+  .thesis_left_text {
+    display: none;
+    }
+
+  .thesis_right {
+    display: none;
+    }
+
+  .fmenu {
+    display: none;
+    }
+
+  .fcontain {
+    width: 100%;
+   }
+
 }
