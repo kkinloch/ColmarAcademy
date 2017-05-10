@@ -16,6 +16,7 @@
           -ms-flex-align: center;
               align-items: center;
       width: 1024px;
+      margin: 0 auto;
     }
 
   /* header section - has main container that we make flex. We could have used
