@@ -4,12 +4,23 @@
     font-family: "Source Sans Pro", sans-serif;
     }
 
-  body {
-    /*Make the body constrain to 1024px, shoudl be enough to layout well*/
-    width: 1024px;
+    /*Make a master constrainer for our page at width of 1024px, which should be
+     enough to layout all our items well. */
+    .master_div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 1024px;
     }
 
-  /* header section - has main container that we make flex. */
+  /* header section - has main container that we make flex. We could have used
+  the <header> tag here, but I prefer to use <div with class> - just a
+  preference. */
   .hcontain {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -48,7 +59,6 @@
 
   .htext .uname {
     font-weight: 500;
-    /*color: #553900;*/
     }
 
   .htext .type {
@@ -62,7 +72,6 @@
     display: flex;
     position: relative;
     left: 352px;
-    left: 352px;
     left: 22rem;
     }
 
@@ -70,12 +79,9 @@
   .hmenu ul li {
     display: inline-block;
     margin-right: 16px;
-    margin-right: 16px;
     margin-right: 1rem;
     height: 20px;
-    height: 20px;
     height: 1.25rem;
-    font-size: 20px;
     font-size: 20px;
     font-size: 1.25rem;
     }
@@ -104,16 +110,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 32px 24px;
-    margin: 32px 24px;
     margin: 2rem 1.5rem;
     margin: 32px 24px;
     height: 400px;
-    height: 400px;
     height: 25rem;
     width: 553px;
-    width: 553px;
     width: 34.5625rem;
-    width: 553px;
     }
 
   .lb_text {
@@ -131,40 +133,28 @@
         -ms-flex-pack: center;
             justify-content: center;
     margin-left: 40px;
-    margin-left: 40px;
     margin-left: 2.5rem;
-    margin-left: 40px;
     }
 
   .lb_text h1 {
-    width: 286px;
-    width: 286px;
     width: 17.875rem;
     width: 286px;
     font-weight: 700;
     font-size: 36px;
-    font-size: 36px;
     font-size: 2.25rem;
     line-height: 40px;
-    line-height: 40px;
     line-height: 2.5rem;
-    margin-bottom: 32px;
     margin-bottom: 32px;
     margin-bottom: 2rem;
     }
 
   .lb_text .lb_p {
     width: 286px;
-    width: 286px;
     width: 17.875rem;
-    width: 286px;
-    font-size: 24px;
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 28px;
-    line-height: 28px;
     line-height: 1.75rem;
-    margin-bottom: 32px;
     margin-bottom: 32px;
     margin-bottom: 2rem;
     }
@@ -183,13 +173,9 @@
     background-color: #ACC5F5;
     color: white;
     width: 286px;
-    width: 286px;
     width: 17.875rem;
-    width: 286px;
-    height: 48px;
     height: 48px;
     height: 3rem;
-    font-size: 20px;
     font-size: 20px;
     font-size: 1.25rem;
     }
@@ -218,9 +204,7 @@
 
   .main_left {
     width: 601px;
-    width: 601px;
     width: 37.5625rem;
-    width: 601px;
     }
 
   .main_left_img {
@@ -228,40 +212,29 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 32px 24px;
-    margin: 32px 24px;
     margin: 2rem 1.5rem;
-    margin: 32px 24px;
-    height: 300px;
     height: 300px;
     height: 18.75rem;
-    width: 553px;
-    width: 553px;
     width: 34.5625rem;
     width: 553px;
     }
 
   .main_left_text {
-    margin-left: 24px;
-    margin-left: 24px;
     margin-left: 1.5rem;
     margin-left: 24px;
     }
 
   .main_left_text h1 {
     font-size: 32px;
-    font-size: 32px;
     font-size: 2rem;
     font-weight: 700;
     margin-top: 32px;
-    margin-top: 32px;
     margin-top: 2rem;
-    margin-bottom: 24px;
     margin-bottom: 24px;
     margin-bottom: 1.5rem;
     }
 
   .main_left_text .hiring {
-    margin-top: 32px;
     margin-top: 32px;
     margin-top: 2rem;
     }
@@ -275,16 +248,12 @@
         -ms-flex-direction: column;
             flex-direction: column;
     width: 423px;
-    width: 423px;
     width: 26.4375rem;
-    width: 423px;
     }
 
   .main_right img {
     height: 35%;
     width: 35%;
-    margin: 16px;
-    margin: 16px;
     margin: 1rem;
     margin: 16px;
     }
@@ -301,8 +270,6 @@
 
   /* Add one more rem of top margin to aling wiht left image */
   .main_right .right_top:first-child {
-    margin-top: 16px;
-    margin-top: 16px;
     margin-top: 1rem;
     margin-top: 16px;
     }
@@ -322,15 +289,12 @@
         -ms-flex-pack: center;
             justify-content: center;
     margin-left: 8px;
-    margin-left: 8px;
     margin-left: 0.5rem;
-    line-height: 32px;
     line-height: 32px;
     line-height: 2rem;
     }
 
   .main_right h2 {
-    font-size: 20px;
     font-size: 20px;
     font-size: 1.25rem;
     font-weight: 700;
@@ -357,9 +321,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     margin-left: 8px;
-    margin-left: 8px;
     margin-left: 0.5rem;
-    line-height: 32px;
     line-height: 32px;
     line-height: 2rem;
     }
@@ -385,15 +347,12 @@
         -ms-flex-pack: center;
             justify-content: center;
     margin-left: 8px;
-    margin-left: 8px;
     margin-left: 0.5rem;
-    line-height: 32px;
     line-height: 32px;
     line-height: 2rem;
     }
 
   .learning {
-    padding-bottom: 32px;
     padding-bottom: 32px;
     padding-bottom: 2rem;
     }
@@ -401,20 +360,15 @@
   .learning .l_title {
     text-align: center;
     padding-top: 32px;
-    padding-top: 32px;
     padding-top: 2rem;
     margin-bottom: 32px;
-    margin-bottom: 32px;
     margin-bottom: 2rem;
-    margin-bottom: 32px;
-    font-size: 32px;
     font-size: 32px;
     font-size: 2rem;
     font-weight: 700;
     }
 
   .learning h1 {
-    font-size: 20px;
     font-size: 20px;
     font-size: 1.25rem;
     font-weight: 700;
@@ -423,16 +377,13 @@
   .learning h2 {
     color: gray;
     margin-top: 8px;
-    margin-top: 8px;
     margin-top: 0.5rem;
-    margin-bottom: 8px;
     margin-bottom: 8px;
     margin-bottom: .5rem;
     }
 
   .learning p {
     color: gray;
-    line-height: 24px;
     line-height: 24px;
     line-height: 1.5rem;
     }
@@ -443,7 +394,6 @@
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin-bottom: 8px;
     margin-bottom: 8px;
     margin-bottom: 0.5rem;
     }
@@ -457,15 +407,12 @@
     background-color: #E9EAEA;
     height: 130px;
     margin-bottom: 8px;
-    margin-bottom: 8px;
     margin-bottom: 0.5rem;
     }
 
   .ltext {
     margin-left: 12px;
-    margin-left: 12px;
     margin-left: 0.75rem;
-    margin-right: 12px;
     margin-right: 12px;
     margin-right: 0.75rem;
     }
@@ -486,39 +433,30 @@
   .thesis h1 {
     text-align: center;
     padding-top: 16px;
-    padding-top: 16px;
     padding-top: 1rem;
-    margin-bottom: 16px;
     margin-bottom: 16px;
     margin-bottom: 1rem;
     font-size: 32px;
-    font-size: 32px;
     font-size: 2rem;
-    font-size: 32px;
     font-weight: 700;
     }
 
   .thesis h2 {
     font-size: 24px;
-    font-size: 24px;
     font-size: 1.5rem;
     font-weight: 500;
     padding-top: 20px;
-    padding-top: 20px;
     padding-top: 1.25rem;
-    padding-bottom: 20px;
     padding-bottom: 20px;
     padding-bottom: 1.25rem;
     }
 
   .thesis_left_text {
     margin-left: 24px;
-    margin-left: 24px;
     margin-left: 1.5rem;
     }
 
   .thesis_left_text p {
-    margin-bottom: 32px;
     margin-bottom: 32px;
     margin-bottom: 2rem;
     }
@@ -531,13 +469,9 @@
 
   .thesis_left_img video {
     height: 400px;
-    height: 400px;
     height: 25rem;
-    width: 553px;
-    width: 553px;
     width: 34.5625rem;
     width: 553px;
-    margin-left: 24px;
     margin-left: 24px;
     margin-left: 1.5rem;
     }
@@ -550,8 +484,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 601px;
-    width: 601px;
     width: 37.5625rem;
     width: 601px;
     }
@@ -572,8 +504,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 423px;
-    width: 423px;
     width: 26.4375rem;
     width: 423px;
     margin-top: 40px;
@@ -584,8 +514,6 @@
   .thesis_right img {
     height: 75%;
     width: 35%;
-    margin: 16px;
-    margin: 16px;
     margin: 1rem;
     margin: 16px;
     }
@@ -610,7 +538,6 @@
         -ms-flex-pack: center;
             justify-content: center;
     margin-left: 8px;
-    margin-left: 8px;
     margin-left: 0.5rem;
     }
 
@@ -633,7 +560,6 @@
         -ms-flex-pack: center;
             justify-content: center;
     margin-left: 8px;
-    margin-left: 8px;
     margin-left: 0.5rem;
     }
 
@@ -646,15 +572,12 @@
         -ms-flex-align: center;
             align-items: center;
     height: 64px;
-    height: 64px;
-    height: 64px;
     height: 4rem;
     width: 100%;
     background-color: #E9EAEA;
     }
 
   .ftext {
-    margin-left: 24px;
     margin-left: 24px;
     margin-left: 1.5rem;
     }
@@ -663,14 +586,12 @@
   .fmenu {
     position: relative;
     left: 480px;
-    left: 480px;
     left: 30rem;
     }
 
   /* Make inline block, we may want to target each block for style later. */
   .fmenu ul li {
     display: inline-block;
-    margin-right: 16px;
     margin-right: 16px;
     margin-right: 1rem;
     }
@@ -679,12 +600,16 @@
 If I were publishing this for real use, we'd likely want additions @media selectors */
 @media only screen and (max-width : 480px) {
 
-  body {
+/*  body {
+    width: 480px;
+  } */
+
+  .master_div {
     width: 480px;
   }
 
   .hcontain {
-    width: 100%;
+    width: 98%;
   }
 
   .hmenu ul {
@@ -849,7 +774,7 @@ If I were publishing this for real use, we'd likely want additions @media select
     }
 
   .fcontain {
-    width: 75%;
+    width: 98%;
    }
 
 }
