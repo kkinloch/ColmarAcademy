@@ -72,8 +72,8 @@
     display: -ms-flexbox;
     display: flex;
     position: relative;
-    left: 352px;
-    left: 22rem;
+    left: 224px;
+    left: 14rem;
     }
 
   /* Make inline block, we may want to target each block for style later. */
@@ -133,6 +133,8 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 380px;
+    width: 23.75rem;
     margin-left: 40px;
     margin-left: 2.5rem;
     }
@@ -356,6 +358,7 @@
   .learning {
     padding-bottom: 32px;
     padding-bottom: 2rem;
+    width: 100%;
     }
 
   .learning .l_title {
@@ -579,15 +582,20 @@
     }
 
   .ftext {
+    display: flex;
     margin-left: 24px;
     margin-left: 1.5rem;
+    }
+
+    .ftext i {
+      margin-left: 2rem;
     }
 
   /* Position relative and push to the right of the page */
   .fmenu {
     position: relative;
-    left: 480px;
-    left: 30rem;
+    left: 400px;
+    left: 25rem;
     }
 
   /* Make inline block, we may want to target each block for style later. */
